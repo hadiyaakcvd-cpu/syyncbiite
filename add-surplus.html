@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Surplus Food - SyncBite</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2 style="margin-bottom: 40px; color: var(--white);">SyncBite</h2>
+            <ul class="sidebar-links">
+                <li><a href="#" class="active">Add Surplus Food</a></li>
+                <li><a href="impact-dashboard.html">Impact Dashboard</a></li>
+                <li style="margin-top: 40px;"><a href="index.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <h2 style="margin-bottom: 30px; color: var(--primary-color);">Add Surplus Food</h2>
+
+                <div class="card" style="max-width: 600px;">
+                    <form action="impact-dashboard.html">
+                        <div class="form-group">
+                            <label for="foodType">Food Type</label>
+                            <input type="text" id="foodType" placeholder="e.g. Rice & Curry" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="quantity">Quantity (Number of Meals)</label>
+                            <input type="number" id="quantity" required>
+                        </div>
+
+                        <div class="flex" style="gap: 20px;">
+                            <div class="form-group" style="flex: 1;">
+                                <label for="expiryTime">Expiry Time</label>
+                                <input type="time" id="expiryTime" required>
+                            </div>
+                            <div class="form-group" style="flex: 1;">
+                                <label for="pickupDeadline">Pickup Deadline</label>
+                                <input type="time" id="pickupDeadline" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="foodImage">Upload Food Image</label>
+                            <input type="file" id="foodImage" accept="image/*">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pickupLocation">Pickup Location</label>
+                            <input type="text" id="pickupLocation" value="123, Main Street, Mumbai" required>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Notify NGOs</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

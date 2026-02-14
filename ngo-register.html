@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register NGO - SyncBite</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SyncBite</a>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
+        <div class="card" style="max-width: 600px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 30px; color: var(--accent-color);">Register Your NGO</h2>
+
+            <form action="available-requests.html">
+                <!-- NGO Details -->
+                <h3 style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">NGO Details</h3>
+                <div class="form-group">
+                    <label for="ngoName">NGO Name</label>
+                    <input type="text" id="ngoName" required>
+                </div>
+                <div class="form-group">
+                    <label for="regNumber">Registration Number</label>
+                    <input type="text" id="regNumber" required>
+                </div>
+                <div class="flex" style="gap: 20px;">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="yearEst">Year Established</label>
+                        <input type="number" id="yearEst" placeholder="YYYY" required>
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label for="type">NGO Type</label>
+                        <select id="type">
+                            <option value="charity">Charity</option>
+                            <option value="orphanage">Orphanage</option>
+                            <option value="foodbank">Food Bank</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Contact Person -->
+                <h3 style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 30px;">
+                    Contact Person</h3>
+                <div class="form-group">
+                    <label for="contactName">Name</label>
+                    <input type="text" id="contactName" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactPhone">Phone Number</label>
+                    <input type="tel" id="contactPhone" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactEmail">Email</label>
+                    <input type="email" id="contactEmail" required>
+                </div>
+
+                <!-- Logistics -->
+                <h3 style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 30px;">
+                    Logistics</h3>
+                <div class="form-group">
+                    <label for="vehicle">Pickup Vehicle Available?</label>
+                    <select id="vehicle">
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="volunteers">Number of Volunteers</label>
+                    <input type="number" id="volunteers">
+                </div>
+                <div class="form-group">
+                    <label for="maxMeals">Maximum Meals Per Day</label>
+                    <input type="number" id="maxMeals">
+                </div>
+
+                <!-- Verification -->
+                <h3 style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 30px;">
+                    Verification</h3>
+                <div class="form-group">
+                    <label for="certificate">Upload NGO Certificate</label>
+                    <input type="file" id="certificate" accept="image/*,.pdf">
+                </div>
+
+                <button type="submit" class="btn btn-accent" style="width: 100%; margin-top: 20px;">Register
+                    NGO</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

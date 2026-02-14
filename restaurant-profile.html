@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Restaurant Profile - SyncBite</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">SyncBite</a>
+        </div>
+    </nav>
+
+    <div class="container" style="padding-top: 40px; padding-bottom: 40px;">
+        <div class="card" style="max-width: 600px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 30px; color: var(--primary-color);">Create Restaurant Profile
+            </h2>
+
+            <form action="add-surplus.html">
+                <!-- Basic Details -->
+                <h3 style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">Basic Details</h3>
+                <div class="form-group">
+                    <label for="restaurantName">Restaurant Name</label>
+                    <input type="text" id="restaurantName" required>
+                </div>
+                <div class="form-group">
+                    <label for="ownerName">Owner Name</label>
+                    <input type="text" id="ownerName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" required>
+                </div>
+
+                <!-- Location Details -->
+                <h3 style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 30px;">
+                    Location</h3>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <select id="city" required>
+                        <option value="">Select City</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="bangalore">Bangalore</option>
+                        <option value="hyderabad">Hyderabad</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="pincode">PIN Code</label>
+                    <input type="text" id="pincode" required>
+                </div>
+
+                <!-- Food Details -->
+                <h3 style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 30px;">
+                    Food & Availability</h3>
+                <div class="form-group">
+                    <label for="foodType">Type of Food</label>
+                    <select id="foodType" required>
+                        <option value="veg">Veg</option>
+                        <option value="non-veg">Non-Veg</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="avgMeals">Average Meals Per Day</label>
+                    <input type="number" id="avgMeals" placeholder="e.g. 50">
+                </div>
+                <div class="flex" style="gap: 20px;">
+                    <div class="form-group" style="flex: 1;">
+                        <label for="startTime">Pickup Start Time</label>
+                        <input type="time" id="startTime">
+                    </div>
+                    <div class="form-group" style="flex: 1;">
+                        <label for="endTime">Pickup End Time</label>
+                        <input type="time" id="endTime">
+                    </div>
+                </div>
+
+                <!-- Verification -->
+                <h3 style="margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px; margin-top: 30px;">
+                    Verification</h3>
+                <div class="form-group">
+                    <label for="fssai">FSSAI License Number</label>
+                    <input type="text" id="fssai" required>
+                </div>
+                <div class="form-group">
+                    <label for="image">Upload Restaurant Image</label>
+                    <input type="file" id="image" accept="image/*">
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Create
+                    Profile</button>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

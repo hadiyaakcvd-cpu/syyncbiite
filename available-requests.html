@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Requests - SyncBite</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <style>
+        .request-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .request-card {
+            border-left: 5px solid var(--accent-color);
+        }
+
+        .request-actions {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dashboard-layout">
+        <!-- Sidebar -->
+        <aside class="sidebar" style="background-color: var(--accent-color);">
+            <h2 style="margin-bottom: 40px; color: var(--white);">SyncBite</h2>
+            <ul class="sidebar-links">
+                <li><a href="#" class="active">Available Requests</a></li>
+                <li><a href="#">My Pickups</a></li>
+                <li><a href="#">Impact</a></li>
+                <li style="margin-top: 40px;"><a href="index.html">Logout</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <div class="container">
+                <h2 style="margin-bottom: 30px; color: #333;">Available Surplus Requests</h2>
+
+                <div class="request-grid">
+                    <!-- Request 1 -->
+                    <div class="card request-card">
+                        <div class="flex" style="justify-content: space-between; margin-bottom: 10px;">
+                            <h3 style="color: var(--primary-color);">Bistro Cafe</h3>
+                            <span style="font-size: 0.8rem; background: #eee; padding: 4px 8px; border-radius: 4px;">2.5
+                                km away</span>
+                        </div>
+                        <p><strong>Quantity:</strong> 30 Meals</p>
+                        <p><strong>Pickup Time:</strong> Before 4:00 PM</p>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Fresh pasta and salads available.
+                        </p>
+
+                        <div class="request-actions">
+                            <button class="btn btn-primary" style="flex: 1; padding: 8px;">Accept</button>
+                            <button class="btn btn-outline"
+                                style="flex: 1; padding: 8px; border-color: #ff4d4d; color: #ff4d4d;">Reject</button>
+                        </div>
+                    </div>
+
+                    <!-- Request 2 -->
+                    <div class="card request-card">
+                        <div class="flex" style="justify-content: space-between; margin-bottom: 10px;">
+                            <h3 style="color: var(--primary-color);">Spice Garden</h3>
+                            <span style="font-size: 0.8rem; background: #eee; padding: 4px 8px; border-radius: 4px;">1.2
+                                km away</span>
+                        </div>
+                        <p><strong>Quantity:</strong> 55 Meals</p>
+                        <p><strong>Pickup Time:</strong> Before 3:30 PM</p>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Rice, Dal, and Mixed Veg.</p>
+
+                        <div class="request-actions">
+                            <button class="btn btn-primary" style="flex: 1; padding: 8px;">Accept</button>
+                            <button class="btn btn-outline"
+                                style="flex: 1; padding: 8px; border-color: #ff4d4d; color: #ff4d4d;">Reject</button>
+                        </div>
+                    </div>
+
+                    <!-- Request 3 -->
+                    <div class="card request-card">
+                        <div class="flex" style="justify-content: space-between; margin-bottom: 10px;">
+                            <h3 style="color: var(--primary-color);">Hotel Grand</h3>
+                            <span style="font-size: 0.8rem; background: #eee; padding: 4px 8px; border-radius: 4px;">4.0
+                                km away</span>
+                        </div>
+                        <p><strong>Quantity:</strong> 120 Meals</p>
+                        <p><strong>Pickup Time:</strong> Before 5:00 PM</p>
+                        <p style="margin-top: 10px; font-size: 0.9rem; color: #666;">Buffet surplus, high quality.</p>
+
+                        <div class="request-actions">
+                            <button class="btn btn-primary" style="flex: 1; padding: 8px;">Accept</button>
+                            <button class="btn btn-outline"
+                                style="flex: 1; padding: 8px; border-color: #ff4d4d; color: #ff4d4d;">Reject</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
