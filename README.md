@@ -10,7 +10,7 @@
 MEMORIAL ORPHANAGE (MAMO) COLLEGE], [niya fathima m- MUHAMMED ABDURAHIMAN
 MEMORIAL ORPHANAGE (MAMO) COLLEGE]
 
-**Hosted Project Link:** [Insert Hosted Link]
+**Hosted Project Link:** [https://syyncbiite-465gmptm2-hadiyaakcvd-cpus-projects.vercel.app/]
 
 **Project Description:**
 Syyncbiite is a web platform designed to bridge the gap between food surplus and food scarcity. It connects restaurants with excess food to NGOs and charities, ensuring that edible food reaches those in need instead of ending up in landfills.
